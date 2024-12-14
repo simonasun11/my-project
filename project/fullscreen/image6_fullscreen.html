@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image 1 - Fullscreen</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative; /* Allow positioning for the arrow */
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Fit the entire image to the screen */
+    }
+
+    .back-arrow {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+      border-radius: 50%; /* Circular arrow */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 24px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .back-arrow:hover {
+      background-color: rgba(255, 255, 255, 1); /* Fully opaque white on hover */
+      transform: scale(1.1); /* Slightly enlarge on hover */
+    }
+  </style>
+</head>
+<body>
+  <img src="../images/image26.jpg" alt="Image 26">
+
+  <!-- Back Arrow -->
+  <a href="../index.html" class="back-arrow">&#8592;</a>
+</body>
+</html>
